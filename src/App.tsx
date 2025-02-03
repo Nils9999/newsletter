@@ -1,6 +1,6 @@
 import backgroundImage from "./assets/backgroundimage.jpg";
 
-export default function App() {
+export function App() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-blue-400">
       <div
