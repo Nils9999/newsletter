@@ -4,7 +4,8 @@ import "./index.css";
 import { App } from "./App.tsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createBrowserRouter, RouterProvider } from "react-router";
-import { Newsletter } from "./components/newsletter";
+import { Mails } from "./components/mails.tsx";
+import { Newsletter } from "./components/newsletter.tsx";
 
 const queryClient = new QueryClient();
 
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/home",
+        element: <Mails />,
+      },
+      {
+        path: "/subscribe",
         element: <Newsletter />,
       },
     ],
